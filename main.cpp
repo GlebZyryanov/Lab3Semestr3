@@ -80,19 +80,15 @@ int main()
 
 			break;
 		case 6:
-			Number c1, c2;
-			printf("%d , ", c1);
-			printf("%d", c2);
-			++c1;//префиксная перегрузка унарного оператора ++
-			++c2;
-			++c2;
-			printf("\n%d , ", c1);
-			printf("%d", c2);
-			c1++;//постфиксная перегрузка унарного оператора ++
+			Number c1, c2, c3;
+			c1++;//
 			c2++;
-			c2++;
-			printf("\n%d , ", c1);
-			printf("%d", c2);
+			++c1;
+			++c2;
+			c3=c1 + c2;
+			printf("c1 = %d\n", c1);
+			printf("c2 = %d\n", c2);
+			printf("c3 = %d\n", c3);
 			break;
 
 		}
