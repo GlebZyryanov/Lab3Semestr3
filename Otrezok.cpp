@@ -3,15 +3,17 @@
 #include "Otrezok.h"
 #include "Dot.h"
 
-void Otrezok::initOtrezok(int initCordX, int initCordY) {
+void Otrezok::initOtrezok(Otrezok *O, int initCordX, int initCordY) {
 	
-	listdot[0] = listdot[0].initDot(initCordX, initCordY);
-	listdot[1] = listdot[0].initDot(initCordX, initCordY);
-
+	for (int i = 0; i < 2; i++) {
+		listdot[i].initDot(&listdot[i], initCordX, initCordY);
+	}
 }
-Otrezok Otrezok::setOtrezok(Otrezok O) {
-	O.listdot[0]=O.listdot[0].setDot(O.listdot[0]);
-	O.listdot[1]=O.listdot[1].setDot(O.listdot[1]);
+Otrezok Otrezok::setOtrezok(Otrezok &O) {
+	
+	for (int i = 0; i < 2; i++) {
+		listdot[i].setDot(listdot[i]);
+	}
 	return O;
 }
 void Otrezok::printOtrezok(Otrezok O)

@@ -2,15 +2,15 @@
 #include<stdio.h>
 #include "Pentagon.h"
 #include "Dot.h"
-void Pentagon::initPentagon(int initCordX, int initCordY) {
+void Pentagon::initPentagon(Pentagon *Pentagon, int initCordX, int initCordY) {
 
-	for (int i = 0; i < 4; i++) {
-		listdot_P[i] = listdot_P[i].initDot(initCordX, initCordY);
+	for (int i = 0; i < 5; i++) {
+		listdot_P[i].initDot(&listdot_P[i], initCordX, initCordY);
 	}
 }
-Pentagon Pentagon::setPentagon(Pentagon Pentagon) {
-	for (int i = 0; i < 4; i++) {
-		Pentagon.listdot_P[i] = Pentagon.listdot_P[i].setDot(Pentagon.listdot_P[0]);
+Pentagon Pentagon::setPentagon(Pentagon &Pentagon) {
+	for (int i = 0; i < 5; i++) {
+		listdot_P[i].setDot(listdot_P[i]);
 	}
 	return Pentagon;
 }

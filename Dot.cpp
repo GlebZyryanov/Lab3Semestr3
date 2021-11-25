@@ -1,19 +1,22 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include<iostream>
 #include "Dot.h"
 
-Dot Dot::initDot(int initCordX, int initCordY) {
-	Dot dot;
-	dot.CordX = initCordX;
-	dot.CordY = initCordY;
-	return dot;
+Dot Dot::initDot(Dot *dot,int initCordX, int initCordY) {//возврат значений по адресу
+	
+	
+	(*dot).CordX = initCordX;
+	(*dot).CordY = initCordY;
+
+	return *dot;
 }
-Dot Dot::setDot(Dot point) {
-	scanf("%d", &point.CordX);
-	scanf("%d", &point.CordY);
+Dot Dot::setDot(Dot &point) {//возврат по ссылке
+	scanf("%d", &CordX);
+	scanf("%d", &CordY);
 	
 	return point;
 }
 void Dot::printDot(Dot point) {
-	printf("(%d,%d)", point.CordX, point.CordY);
+	printf("(%d,%d)", (*this).CordX, (*this).CordY);//использование указателя this 
 }

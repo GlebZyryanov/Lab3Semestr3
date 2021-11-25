@@ -3,8 +3,8 @@
 class Dot
 {
 public:
-	Dot initDot(int CordX, int CordY);
-	Dot setDot(Dot point);
+	Dot initDot(Dot* dot,int CordX, int CordY);
+	Dot setDot(Dot &point);
 	void printDot(Dot point);
 	
 private:
