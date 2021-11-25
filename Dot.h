@@ -6,6 +6,7 @@ public:
 	Dot initDot(Dot* dot,int CordX, int CordY);
 	Dot setDot(Dot &point);
 	void printDot(Dot point);
+	friend void reset(Dot& dot);//дружественная функция, сбрасывает координат точки до нуля
 	
 private:
 	int CordX;

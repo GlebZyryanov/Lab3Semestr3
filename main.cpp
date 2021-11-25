@@ -6,11 +6,14 @@
 #include "Otrezok.h"
 #include"Squaer.h"
 #include"Pentagon.h"
+#include"Number.h"
 int main()
 {
 	do {
 		int count;
+		
 		printf("Choose the figure:\n1 -(Touchka)\n2 - Otrezok\n3 - Triangle\n4 - Squaere\n5 - Pentagon\n");
+		printf("Demonstrate Peregruz++ - 6\nDemonstrate peregruz + - 7\n");
 		scanf("%d", &count);
 		switch (count)
 		{
@@ -22,6 +25,9 @@ int main()
 			printf("Set the coordinates of Touchka\n");
 			touch.setDot(touch);
 			printf("The result is:");
+			touch.printDot(touch);
+			reset(touch);//дружественная функция, сбрасывает значение координат до нуля
+			printf("\nThe result after reset is:");
 			touch.printDot(touch);
 			break;
 		}
@@ -72,6 +78,21 @@ int main()
 			printf("The coordinates of Pentagona is: ");
 			pt.printPentagon(pt);
 
+			break;
+		case 6:
+			Number c1, c2;
+			printf("%d , ", c1);
+			printf("%d", c2);
+			++c1;//префиксная перегрузка унарного оператора ++
+			++c2;
+			++c2;
+			printf("\n%d , ", c1);
+			printf("%d", c2);
+			c1++;//постфиксная перегрузка унарного оператора ++
+			c2++;
+			c2++;
+			printf("\n%d , ", c1);
+			printf("%d", c2);
 			break;
 
 		}

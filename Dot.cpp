@@ -20,3 +20,8 @@ Dot Dot::setDot(Dot &point) {//возврат по ссылке
 void Dot::printDot(Dot point) {
 	printf("(%d,%d)", (*this).CordX, (*this).CordY);//использование указателя this 
 }
+void reset(Dot& dot)
+{
+	dot.CordX = 0;
+	dot.CordY = 0;
+}
