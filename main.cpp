@@ -9,19 +9,21 @@
 #include"Number.h"
 #include<String>
 #include<iostream>
+int Dot::s_count = 0;
 int main()
 {
 	do {
 		int count;
-		
+	
 		printf("Choose the figure:\n1 -(Touchka)\n2 - Otrezok\n3 - Triangle\n4 - Squaere\n5 - Pentagon\n");
-		printf("Demonstrate Peregruz++ - 6\nArray type String - 7\n");
+		printf("Demonstrate Peregruz++ - 6\nArray type String - 7\n8-lab8\n");
 		scanf("%d", &count);
 		switch (count)
 		{
 		case 1:
 		{//в классе точка продемонстрированы возврат через указатель, возврат через ссылку, работа с указателем this и дружественна€ функци€ reset
 			Dot touch;
+			
 			touch.initDot(&touch, 0, 0);
 			printf("You chose the Touchka\n");
 			printf("Set the coordinates of Touchka\n");
@@ -37,6 +39,7 @@ int main()
 		{
 			printf("Your chose is Otrezok\n");
 			Otrezok otr{};
+			
 			otr.initOtrezok(&otr, 0, 0);
 			printf("Example: ");
 			otr.printOtrezok(otr);
@@ -136,11 +139,20 @@ int main()
 
 			//¬ывод массива AS
 			std::cout << "\nArray AS:" << std::endl;
-			for (int i = 0; i < n; i++)
+			for (int i = 0; i < n; i++) {
 				std::cout << "AS[" << i << "] = " << AS[i].c_str() << std::endl;
-
-			delete[] AS;
 			}
+			delete[] AS;
+			break;
+			}
+		case 8: {
+			Dot f;
+			f.s_getCount;
+			int n = f.s_count;   
+			printf("\nStatic method demo:%d\n",n);
+
+			break;
+		}
 		}
 		printf("\n\nDo you want to escape - ESC?\n");
 

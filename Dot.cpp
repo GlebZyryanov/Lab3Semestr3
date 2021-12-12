@@ -3,12 +3,13 @@
 #include<iostream>
 #include "Dot.h"
 
+
 Dot Dot::initDot(Dot *dot,int initCordX, int initCordY) {//возврат значений по адресу
 	
 	
 	(*dot).CordX = initCordX;
 	(*dot).CordY = initCordY;
-
+	s_count++;
 	return *dot;
 }
 Dot Dot::setDot(Dot &point) {//возврат по ссылке
