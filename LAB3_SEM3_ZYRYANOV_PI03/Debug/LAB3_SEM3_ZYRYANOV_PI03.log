@@ -1,6 +1,6 @@
 ﻿  main.cpp
-D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(158,12): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "Number"
-D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(159,12): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "Number"
-D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(160,12): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "Number"
-D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(213,6): warning C4551: в вызове функции отсутствует список аргументов
+D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(162,14): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "Number"
+D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(163,14): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "Number"
+D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(164,14): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "Number"
+D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\main.cpp(217,8): warning C4551: в вызове функции отсутствует список аргументов
   LAB3_SEM3_ZYRYANOV_PI03.vcxproj -> D:\Games\A_Programming\Troitskiy\LAB3_SEM3_ZYRYANOV_PI03\Debug\LAB3_SEM3_ZYRYANOV_PI03.exe
